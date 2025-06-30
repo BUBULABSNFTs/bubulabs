@@ -3,75 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BuBuLabs – NFT Collection</title>
+  <title>BUBULABS – NFT Collection</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0d0d0d;
+      --accent: #00ffcc;
+      --text: #f0f0f0;
+      --muted: #999;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #0d0d0d;
-      color: #f0f0f0;
+      background-color: var(--bg);
+      color: var(--text);
       scroll-behavior: smooth;
     }
+
     header {
       text-align: center;
       padding: 100px 20px 60px;
-      background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+      background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
     }
+
     header h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 3em;
-      color: #00ffcc;
+      font-size: 3.5em;
+      color: var(--accent);
+      margin-bottom: 10px;
     }
+
     header p {
       font-size: 1.2em;
-      color: #cccccc;
+      color: var(--muted);
     }
+
     .cta {
       margin-top: 30px;
     }
+
     .cta a {
       text-decoration: none;
-      color: #0d0d0d;
-      background: #00ffcc;
-      padding: 12px 24px;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 14px 28px;
       border-radius: 8px;
       font-weight: bold;
+      font-size: 1em;
       transition: background 0.3s;
     }
+
     .cta a:hover {
       background: #00ccaa;
     }
+
     section {
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       font-family: 'Orbitron', sans-serif;
-      color: #00ffcc;
+      color: var(--accent);
+      margin-bottom: 20px;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
     .roadmap {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .roadmap div {
       background: #1a1a1a;
       padding: 20px;
       border-radius: 10px;
+      border: 1px solid #222;
     }
+
     footer {
       text-align: center;
       padding: 40px 20px;
       background: #111;
       font-size: 0.9em;
-      color: #777;
+      color: var(--muted);
     }
+
     .social a {
       margin: 0 10px;
-      color: #00ffcc;
+      color: var(--accent);
       text-decoration: none;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -103,12 +140,12 @@
   <section>
     <h2>Roadmap</h2>
     <div class="roadmap">
-      <div><strong>✅ Phase 1:</strong> Concept & Design</div>
-      <div><strong>🔄 Phase 2:</strong> Collection Generation</div>
-      <div><strong>⏳ Phase 3:</strong> Minting & Launch</div>
-      <div><strong>🔐 Phase 4:</strong> Utility Activation</div>
-      <div><strong>🌱 Phase 5:</strong> Community Building</div>
-      <div><strong>🚀 Phase 6:</strong> Expansion & Collabs</div>
+      <div><strong>✅ Phase 1:</strong><br> Concept & Design</div>
+      <div><strong>🔄 Phase 2:</strong><br> Collection Generation</div>
+      <div><strong>⏳ Phase 3:</strong><br> Minting & Launch</div>
+      <div><strong>🔐 Phase 4:</strong><br> Utility Activation</div>
+      <div><strong>🌱 Phase 5:</strong><br> Community Building</div>
+      <div><strong>🚀 Phase 6:</strong><br> Expansion & Collabs</div>
     </div>
   </section>
 
